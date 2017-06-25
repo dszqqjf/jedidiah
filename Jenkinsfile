@@ -1,3 +1,5 @@
+#!groovy​
+
 pipeline {
     agent any
     tools {
@@ -7,7 +9,7 @@ pipeline {
     stages {
         stage('Initialize') {
             steps {
-               sh '''
+               bat '''
                     echo "PATH = ${PATH}"
                 '''
             }
